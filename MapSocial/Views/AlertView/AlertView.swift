@@ -71,19 +71,13 @@ extension AlertView: UICollectionViewDataSource, UICollectionViewDelegate, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("count: ", emojis.count)
         return emojis.count
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         statusLabel.text = emojis[indexPath.row]
         selectedEmoji = emojis[indexPath.row]
-
         print(selectedEmoji)
-//        selectColor = coloRay[indexPath.row]
-//        updateSliders(color: selectColor)
-//        colorPreview.backgroundColor = selectColor
-//        updateSenderColor()
     }
 
     func collectionView(_ collectionView: UICollectionView,
