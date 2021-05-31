@@ -20,6 +20,18 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>We need access to your location for the Map to function</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>We need access to your location for the Map to function</string>
+    <key>NSLocationUsageDescription</key>
+    <string>We need access to your location for the Map to function</string>
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>We need access to your location for the Map to function</string>
+    <key>UIBackgroundModes</key>
+    <array>
+        <string>location</string>
+    </array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

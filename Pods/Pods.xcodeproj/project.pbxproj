@@ -1,0 +1,978 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		033965E725987400F142ED5C48BB94B7 /* Pods-MapSocial-MapSocialUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 697D68C6FBD57F43ACCA4212123C975D /* Pods-MapSocial-MapSocialUITests-dummy.m */; };
+		131B861CA2259B3EA41C39A2FCFF1425 /* Smile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601290656903B1B222FAA79FEB745FE7 /* Smile.swift */; };
+		2A4FBAFFA0BA6FEBFD7A5B21AD9D8A26 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		2C140BA953F8DD9F53D7E30BFF84D8CC /* Pods-MapSocial-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF566B27B5403F58D9FBADF7EBB1FD24 /* Pods-MapSocial-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3345FCC85EE96D592BEF82BB454122F5 /* Pods-MapSocialTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4100510E46D6BFE8AF7303F0E01C61A9 /* Pods-MapSocialTests-dummy.m */; };
+		3FAA3F496A1ECACD89BF5BCEF5B7EEF4 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA5BFC47D52F514F0D9465666F56DCE /* Categories.swift */; };
+		58AE6FB6094C1862900D505FEDC16968 /* Smile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DB83FC6A96D0C58E38ADBE8BF29CBE6 /* Smile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69CEE7618708B5F0EF0266D1A0CA624D /* Pods-MapSocialTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6640813237E072AEB72741C7CECFC13B /* Pods-MapSocialTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		750119957134517275A4EAE7ACCF804D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7D2B4105D3B7237DC6C4F5348A309DAC /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EFB412667C0963B54BD258DE4CDD5DB /* Utils.swift */; };
+		92FAF6ED6BF2D223DB76F070B746C7C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9C606CF9AD3CEF909F597ED2965C6F65 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9D326F1DF11052BC70C799F5E6842DC3 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6528634EB1514AA80E5F06E434A45C3 /* Emoji.swift */; };
+		BDEE54360E89D4968822AC0AA4114CEB /* Smile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C68334B78E99F58BF3807AFE9C15E2B /* Smile-dummy.m */; };
+		C7323801782386F945CFC14DA79D92E5 /* Pods-MapSocial-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2161D81CD958F67A01D0C9BB1CD3C28 /* Pods-MapSocial-dummy.m */; };
+		D2A5EF13B561574ACA386266C4CBA374 /* Pods-MapSocial-MapSocialUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 738424ABC675E371B6D87B0344F49ECE /* Pods-MapSocial-MapSocialUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F021A051DE072176217389A606A5C90F /* Sequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7F0DB14D2C5D55F8EC89A9BB3FFFA3 /* Sequence.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		227B362D5C592F2EB585F17109FF9E9B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E504DDD9BF25DED11BB952B228543F69;
+			remoteInfo = Smile;
+		};
+		245C3DCE95B2FFA7CE4CDF7F8A502D02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D21874E11E1B2546D6F03C42ED52341;
+			remoteInfo = "Pods-MapSocial";
+		};
+		CF6D36B4084C218B2A9E8578A65834D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E504DDD9BF25DED11BB952B228543F69;
+			remoteInfo = Smile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0497DB39E53CD3844316F6518FC9FD04 /* Pods-MapSocial-MapSocialUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MapSocial-MapSocialUITests.modulemap"; sourceTree = "<group>"; };
+		091623FBB4F6FFAAF22EDE3B68AE7A8D /* Pods-MapSocial-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MapSocial-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0965CBA68A0F1A4EFE8AE58035E9F479 /* Pods-MapSocial-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MapSocial-frameworks.sh"; sourceTree = "<group>"; };
+		0C68334B78E99F58BF3807AFE9C15E2B /* Smile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Smile-dummy.m"; sourceTree = "<group>"; };
+		12C2E81A435CAD4D8881F2EDBA691AB6 /* Pods-MapSocial-MapSocialUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapSocial-MapSocialUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		197DD3B4758645D173C87416BCC6F97D /* Pods-MapSocial-MapSocialUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MapSocial-MapSocialUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1EFB412667C0963B54BD258DE4CDD5DB /* Utils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Sources/Utils.swift; sourceTree = "<group>"; };
+		23DA253324F1A1CE3DCDF0620209ECB8 /* Pods-MapSocialTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapSocialTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DA5BFC47D52F514F0D9465666F56DCE /* Categories.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Categories.swift; path = Sources/Categories.swift; sourceTree = "<group>"; };
+		3A97A8FDB4BCB917DE789CD0CF59CC31 /* Smile-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Smile-Info.plist"; sourceTree = "<group>"; };
+		3C7F0DB14D2C5D55F8EC89A9BB3FFFA3 /* Sequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Sequence.swift; path = Sources/Sequence.swift; sourceTree = "<group>"; };
+		3EB278552399F55393CAE33A62429C27 /* Pods_MapSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MapSocial.framework; path = "Pods-MapSocial.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4087CD5693EE5729CC5ECCD5F258DE11 /* Pods-MapSocial-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapSocial-acknowledgements.plist"; sourceTree = "<group>"; };
+		4100510E46D6BFE8AF7303F0E01C61A9 /* Pods-MapSocialTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MapSocialTests-dummy.m"; sourceTree = "<group>"; };
+		4F0CA5ADAE177FB9BA992D1E3313C385 /* Pods_MapSocialTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MapSocialTests.framework; path = "Pods-MapSocialTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		553758F8FBA83927B6888EE4C73D53A6 /* Pods-MapSocialTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapSocialTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		55BF931D443C95BD3D10AAB4B4D80513 /* Pods-MapSocial-MapSocialUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapSocial-MapSocialUITests-Info.plist"; sourceTree = "<group>"; };
+		56670AEA2991E1899B260334419DEFE6 /* Smile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Smile.debug.xcconfig; sourceTree = "<group>"; };
+		601290656903B1B222FAA79FEB745FE7 /* Smile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Smile.swift; path = Sources/Smile.swift; sourceTree = "<group>"; };
+		63BE0B1FABB9081E332453EBF54EBA39 /* Pods-MapSocial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapSocial.release.xcconfig"; sourceTree = "<group>"; };
+		6640813237E072AEB72741C7CECFC13B /* Pods-MapSocialTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MapSocialTests-umbrella.h"; sourceTree = "<group>"; };
+		697D68C6FBD57F43ACCA4212123C975D /* Pods-MapSocial-MapSocialUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MapSocial-MapSocialUITests-dummy.m"; sourceTree = "<group>"; };
+		6DB83FC6A96D0C58E38ADBE8BF29CBE6 /* Smile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Smile-umbrella.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		738424ABC675E371B6D87B0344F49ECE /* Pods-MapSocial-MapSocialUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MapSocial-MapSocialUITests-umbrella.h"; sourceTree = "<group>"; };
+		7AAEA9DC93819E68D7E8D4B3F0850711 /* Pods-MapSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapSocial.debug.xcconfig"; sourceTree = "<group>"; };
+		8EB34008DDB5DF9E6CB5E6C2FFCBD35F /* Smile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Smile.release.xcconfig; sourceTree = "<group>"; };
+		91B91FB83A2E49E94F0D6721F90FE71E /* Pods-MapSocialTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapSocialTests.release.xcconfig"; sourceTree = "<group>"; };
+		932EEF2D326658DAA6C0F879F71688C2 /* Pods-MapSocialTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MapSocialTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93547A98A40D8CC1AAA6CDFE7852C546 /* Smile-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Smile-prefix.pch"; sourceTree = "<group>"; };
+		96C88069B9DD9D88958A9F928595690E /* Pods-MapSocialTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapSocialTests-Info.plist"; sourceTree = "<group>"; };
+		9A419EB062D3E60F383802B16AE8D1BA /* Pods-MapSocial-MapSocialUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapSocial-MapSocialUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4E1E8011F395935D8F09248C19F6F6C /* Pods_MapSocial_MapSocialUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MapSocial_MapSocialUITests.framework; path = "Pods-MapSocial-MapSocialUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6528634EB1514AA80E5F06E434A45C3 /* Emoji.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Emoji.swift; path = Sources/Emoji.swift; sourceTree = "<group>"; };
+		AA2B94CA236EB29F395826C8801CE7B2 /* Pods-MapSocialTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MapSocialTests.modulemap"; sourceTree = "<group>"; };
+		B2161D81CD958F67A01D0C9BB1CD3C28 /* Pods-MapSocial-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MapSocial-dummy.m"; sourceTree = "<group>"; };
+		B34D3212544483D59C3A6829274CB40A /* Pods-MapSocial-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapSocial-Info.plist"; sourceTree = "<group>"; };
+		B826449E56A81C8F6478F5A86328B85B /* Pods-MapSocial-MapSocialUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapSocial-MapSocialUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D0408E293001FA7069C9CC497AD4122E /* Pods-MapSocial-MapSocialUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MapSocial-MapSocialUITests-frameworks.sh"; sourceTree = "<group>"; };
+		D120047ECC482DDA7D10F06643B72E9C /* Pods-MapSocial.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MapSocial.modulemap"; sourceTree = "<group>"; };
+		D22838D66383F30FD8D8E729D2B5E8E7 /* Smile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Smile.framework; path = Smile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3A35DB45461826E672B1894358F46C0 /* Smile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Smile.modulemap; sourceTree = "<group>"; };
+		FF566B27B5403F58D9FBADF7EBB1FD24 /* Pods-MapSocial-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MapSocial-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D5B925A8459C93A1C28C3CDC4C8C69F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A4FBAFFA0BA6FEBFD7A5B21AD9D8A26 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		318383A3A37EFB0048868917148E2409 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750119957134517275A4EAE7ACCF804D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		574C9AE82C646C7201CE2C630C4458BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C606CF9AD3CEF909F597ED2965C6F65 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA6F52589EEDE691D568FF05D65E3DE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92FAF6ED6BF2D223DB76F070B746C7C2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26016A6783673752494B3A12F791898A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3A35DB45461826E672B1894358F46C0 /* Smile.modulemap */,
+				0C68334B78E99F58BF3807AFE9C15E2B /* Smile-dummy.m */,
+				3A97A8FDB4BCB917DE789CD0CF59CC31 /* Smile-Info.plist */,
+				93547A98A40D8CC1AAA6CDFE7852C546 /* Smile-prefix.pch */,
+				6DB83FC6A96D0C58E38ADBE8BF29CBE6 /* Smile-umbrella.h */,
+				56670AEA2991E1899B260334419DEFE6 /* Smile.debug.xcconfig */,
+				8EB34008DDB5DF9E6CB5E6C2FFCBD35F /* Smile.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Smile";
+			sourceTree = "<group>";
+		};
+		338C8282996E86FCF798408549760AC4 /* Pods-MapSocial-MapSocialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0497DB39E53CD3844316F6518FC9FD04 /* Pods-MapSocial-MapSocialUITests.modulemap */,
+				197DD3B4758645D173C87416BCC6F97D /* Pods-MapSocial-MapSocialUITests-acknowledgements.markdown */,
+				9A419EB062D3E60F383802B16AE8D1BA /* Pods-MapSocial-MapSocialUITests-acknowledgements.plist */,
+				697D68C6FBD57F43ACCA4212123C975D /* Pods-MapSocial-MapSocialUITests-dummy.m */,
+				D0408E293001FA7069C9CC497AD4122E /* Pods-MapSocial-MapSocialUITests-frameworks.sh */,
+				55BF931D443C95BD3D10AAB4B4D80513 /* Pods-MapSocial-MapSocialUITests-Info.plist */,
+				738424ABC675E371B6D87B0344F49ECE /* Pods-MapSocial-MapSocialUITests-umbrella.h */,
+				12C2E81A435CAD4D8881F2EDBA691AB6 /* Pods-MapSocial-MapSocialUITests.debug.xcconfig */,
+				B826449E56A81C8F6478F5A86328B85B /* Pods-MapSocial-MapSocialUITests.release.xcconfig */,
+			);
+			name = "Pods-MapSocial-MapSocialUITests";
+			path = "Target Support Files/Pods-MapSocial-MapSocialUITests";
+			sourceTree = "<group>";
+		};
+		54C3E58E8062912B76D05935E93F326F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF208C366D6F047C64B35DD065A31113 /* Pods-MapSocial */,
+				338C8282996E86FCF798408549760AC4 /* Pods-MapSocial-MapSocialUITests */,
+				A03F9885A00DFFAEDA83B20978A70C3A /* Pods-MapSocialTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		74923983359A5D29AD350C56F07A9E73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C561518C0CD819FDAB25329C901A956 /* Smile */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7C561518C0CD819FDAB25329C901A956 /* Smile */ = {
+			isa = PBXGroup;
+			children = (
+				2DA5BFC47D52F514F0D9465666F56DCE /* Categories.swift */,
+				A6528634EB1514AA80E5F06E434A45C3 /* Emoji.swift */,
+				3C7F0DB14D2C5D55F8EC89A9BB3FFFA3 /* Sequence.swift */,
+				601290656903B1B222FAA79FEB745FE7 /* Smile.swift */,
+				1EFB412667C0963B54BD258DE4CDD5DB /* Utils.swift */,
+				26016A6783673752494B3A12F791898A /* Support Files */,
+			);
+			name = Smile;
+			path = Smile;
+			sourceTree = "<group>";
+		};
+		902184ED941B45CE94B28AA5F5FCCC18 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EB278552399F55393CAE33A62429C27 /* Pods_MapSocial.framework */,
+				A4E1E8011F395935D8F09248C19F6F6C /* Pods_MapSocial_MapSocialUITests.framework */,
+				4F0CA5ADAE177FB9BA992D1E3313C385 /* Pods_MapSocialTests.framework */,
+				D22838D66383F30FD8D8E729D2B5E8E7 /* Smile.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A03F9885A00DFFAEDA83B20978A70C3A /* Pods-MapSocialTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA2B94CA236EB29F395826C8801CE7B2 /* Pods-MapSocialTests.modulemap */,
+				932EEF2D326658DAA6C0F879F71688C2 /* Pods-MapSocialTests-acknowledgements.markdown */,
+				553758F8FBA83927B6888EE4C73D53A6 /* Pods-MapSocialTests-acknowledgements.plist */,
+				4100510E46D6BFE8AF7303F0E01C61A9 /* Pods-MapSocialTests-dummy.m */,
+				96C88069B9DD9D88958A9F928595690E /* Pods-MapSocialTests-Info.plist */,
+				6640813237E072AEB72741C7CECFC13B /* Pods-MapSocialTests-umbrella.h */,
+				23DA253324F1A1CE3DCDF0620209ECB8 /* Pods-MapSocialTests.debug.xcconfig */,
+				91B91FB83A2E49E94F0D6721F90FE71E /* Pods-MapSocialTests.release.xcconfig */,
+			);
+			name = "Pods-MapSocialTests";
+			path = "Target Support Files/Pods-MapSocialTests";
+			sourceTree = "<group>";
+		};
+		BF208C366D6F047C64B35DD065A31113 /* Pods-MapSocial */ = {
+			isa = PBXGroup;
+			children = (
+				D120047ECC482DDA7D10F06643B72E9C /* Pods-MapSocial.modulemap */,
+				091623FBB4F6FFAAF22EDE3B68AE7A8D /* Pods-MapSocial-acknowledgements.markdown */,
+				4087CD5693EE5729CC5ECCD5F258DE11 /* Pods-MapSocial-acknowledgements.plist */,
+				B2161D81CD958F67A01D0C9BB1CD3C28 /* Pods-MapSocial-dummy.m */,
+				0965CBA68A0F1A4EFE8AE58035E9F479 /* Pods-MapSocial-frameworks.sh */,
+				B34D3212544483D59C3A6829274CB40A /* Pods-MapSocial-Info.plist */,
+				FF566B27B5403F58D9FBADF7EBB1FD24 /* Pods-MapSocial-umbrella.h */,
+				7AAEA9DC93819E68D7E8D4B3F0850711 /* Pods-MapSocial.debug.xcconfig */,
+				63BE0B1FABB9081E332453EBF54EBA39 /* Pods-MapSocial.release.xcconfig */,
+			);
+			name = "Pods-MapSocial";
+			path = "Target Support Files/Pods-MapSocial";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				74923983359A5D29AD350C56F07A9E73 /* Pods */,
+				902184ED941B45CE94B28AA5F5FCCC18 /* Products */,
+				54C3E58E8062912B76D05935E93F326F /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1E382D65F69A715ED92A148EB4200FE0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58AE6FB6094C1862900D505FEDC16968 /* Smile-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B728BE2D64E9EE5C9B99AB3FE7256D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2A5EF13B561574ACA386266C4CBA374 /* Pods-MapSocial-MapSocialUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47FBD11E5037763C95D189779A02C025 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C140BA953F8DD9F53D7E30BFF84D8CC /* Pods-MapSocial-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92D00DFD6DA0AD118D82120C05900853 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CEE7618708B5F0EF0266D1A0CA624D /* Pods-MapSocialTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1F570ADA1680BA02CE588385A090411B /* Pods-MapSocialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AC17DD88233CB3D08EB5BE6D1FD79A6 /* Build configuration list for PBXNativeTarget "Pods-MapSocialTests" */;
+			buildPhases = (
+				92D00DFD6DA0AD118D82120C05900853 /* Headers */,
+				57F0D6A44C6047581C92058433EDFBF1 /* Sources */,
+				1D5B925A8459C93A1C28C3CDC4C8C69F /* Frameworks */,
+				489B7118046BF492A9C8A2EC84BEDBAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E44F82AE45E130A1612DAD274395A60D /* PBXTargetDependency */,
+			);
+			name = "Pods-MapSocialTests";
+			productName = "Pods-MapSocialTests";
+			productReference = 4F0CA5ADAE177FB9BA992D1E3313C385 /* Pods_MapSocialTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3BF9049306DFFCF60EC2D99E72DE6D29 /* Pods-MapSocial-MapSocialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A224B348AA965B2D2A94656B4288AAB /* Build configuration list for PBXNativeTarget "Pods-MapSocial-MapSocialUITests" */;
+			buildPhases = (
+				27B728BE2D64E9EE5C9B99AB3FE7256D /* Headers */,
+				D8EBE311F98638DA727AECBC924D277C /* Sources */,
+				574C9AE82C646C7201CE2C630C4458BD /* Frameworks */,
+				C651D53B3EE244B683661B7C608056F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1604979F2A9A16085454D60617A10808 /* PBXTargetDependency */,
+			);
+			name = "Pods-MapSocial-MapSocialUITests";
+			productName = "Pods-MapSocial-MapSocialUITests";
+			productReference = A4E1E8011F395935D8F09248C19F6F6C /* Pods_MapSocial_MapSocialUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D21874E11E1B2546D6F03C42ED52341 /* Pods-MapSocial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FFA6AD9844BD75110BB8B3935C87B85 /* Build configuration list for PBXNativeTarget "Pods-MapSocial" */;
+			buildPhases = (
+				47FBD11E5037763C95D189779A02C025 /* Headers */,
+				453AD4C68233D57EF4AEA7FC23F3B1D4 /* Sources */,
+				318383A3A37EFB0048868917148E2409 /* Frameworks */,
+				AA05D5277118EB7CBBFC0656EC1AB853 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBF7E81DDB3D8417E55532EC809CFAC3 /* PBXTargetDependency */,
+			);
+			name = "Pods-MapSocial";
+			productName = "Pods-MapSocial";
+			productReference = 3EB278552399F55393CAE33A62429C27 /* Pods_MapSocial.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E504DDD9BF25DED11BB952B228543F69 /* Smile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19769E2ED7D0573E60962B34DF59B9B2 /* Build configuration list for PBXNativeTarget "Smile" */;
+			buildPhases = (
+				1E382D65F69A715ED92A148EB4200FE0 /* Headers */,
+				ECD112EC19A2F543C7DA422057BD91CE /* Sources */,
+				CA6F52589EEDE691D568FF05D65E3DE8 /* Frameworks */,
+				D574E14AFB98E58835A16B50B537A027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Smile;
+			productName = Smile;
+			productReference = D22838D66383F30FD8D8E729D2B5E8E7 /* Smile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 902184ED941B45CE94B28AA5F5FCCC18 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D21874E11E1B2546D6F03C42ED52341 /* Pods-MapSocial */,
+				3BF9049306DFFCF60EC2D99E72DE6D29 /* Pods-MapSocial-MapSocialUITests */,
+				1F570ADA1680BA02CE588385A090411B /* Pods-MapSocialTests */,
+				E504DDD9BF25DED11BB952B228543F69 /* Smile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		489B7118046BF492A9C8A2EC84BEDBAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA05D5277118EB7CBBFC0656EC1AB853 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C651D53B3EE244B683661B7C608056F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D574E14AFB98E58835A16B50B537A027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		453AD4C68233D57EF4AEA7FC23F3B1D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7323801782386F945CFC14DA79D92E5 /* Pods-MapSocial-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57F0D6A44C6047581C92058433EDFBF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3345FCC85EE96D592BEF82BB454122F5 /* Pods-MapSocialTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8EBE311F98638DA727AECBC924D277C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				033965E725987400F142ED5C48BB94B7 /* Pods-MapSocial-MapSocialUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECD112EC19A2F543C7DA422057BD91CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FAA3F496A1ECACD89BF5BCEF5B7EEF4 /* Categories.swift in Sources */,
+				9D326F1DF11052BC70C799F5E6842DC3 /* Emoji.swift in Sources */,
+				F021A051DE072176217389A606A5C90F /* Sequence.swift in Sources */,
+				BDEE54360E89D4968822AC0AA4114CEB /* Smile-dummy.m in Sources */,
+				131B861CA2259B3EA41C39A2FCFF1425 /* Smile.swift in Sources */,
+				7D2B4105D3B7237DC6C4F5348A309DAC /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1604979F2A9A16085454D60617A10808 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Smile;
+			target = E504DDD9BF25DED11BB952B228543F69 /* Smile */;
+			targetProxy = CF6D36B4084C218B2A9E8578A65834D2 /* PBXContainerItemProxy */;
+		};
+		DBF7E81DDB3D8417E55532EC809CFAC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Smile;
+			target = E504DDD9BF25DED11BB952B228543F69 /* Smile */;
+			targetProxy = 227B362D5C592F2EB585F17109FF9E9B /* PBXContainerItemProxy */;
+		};
+		E44F82AE45E130A1612DAD274395A60D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MapSocial";
+			target = 9D21874E11E1B2546D6F03C42ED52341 /* Pods-MapSocial */;
+			targetProxy = 245C3DCE95B2FFA7CE4CDF7F8A502D02 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		280330902C49DE19CA31635E1F1A8879 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DA253324F1A1CE3DCDF0620209ECB8 /* Pods-MapSocialTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MapSocialTests/Pods-MapSocialTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MapSocialTests/Pods-MapSocialTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		29DE13286BBB6A45B3652FAE4BF910F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB34008DDB5DF9E6CB5E6C2FFCBD35F /* Smile.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Smile/Smile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Smile/Smile-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Smile/Smile.modulemap";
+				PRODUCT_MODULE_NAME = Smile;
+				PRODUCT_NAME = Smile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7315769E3AD12F934C2931DBA7EAE0F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91B91FB83A2E49E94F0D6721F90FE71E /* Pods-MapSocialTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MapSocialTests/Pods-MapSocialTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MapSocialTests/Pods-MapSocialTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92A3E9AC052A7345115439021B218E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9E120A3E2DC508BDD7702406693A15AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12C2E81A435CAD4D8881F2EDBA691AB6 /* Pods-MapSocial-MapSocialUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MapSocial-MapSocialUITests/Pods-MapSocial-MapSocialUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MapSocial-MapSocialUITests/Pods-MapSocial-MapSocialUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CF1F67821C0AD6F0A45558BEC3889825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B826449E56A81C8F6478F5A86328B85B /* Pods-MapSocial-MapSocialUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MapSocial-MapSocialUITests/Pods-MapSocial-MapSocialUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MapSocial-MapSocialUITests/Pods-MapSocial-MapSocialUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D3844615A4356D01985C2E321F7313EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AAEA9DC93819E68D7E8D4B3F0850711 /* Pods-MapSocial.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MapSocial/Pods-MapSocial-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MapSocial/Pods-MapSocial.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D7277A50D6C77BECBA7985AF66D4AABE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63BE0B1FABB9081E332453EBF54EBA39 /* Pods-MapSocial.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MapSocial/Pods-MapSocial-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MapSocial/Pods-MapSocial.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DF80F2B609F3FCFD0F8D2F9F9C8889C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56670AEA2991E1899B260334419DEFE6 /* Smile.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Smile/Smile-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Smile/Smile-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Smile/Smile.modulemap";
+				PRODUCT_MODULE_NAME = Smile;
+				PRODUCT_NAME = Smile;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		19769E2ED7D0573E60962B34DF59B9B2 /* Build configuration list for PBXNativeTarget "Smile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF80F2B609F3FCFD0F8D2F9F9C8889C7 /* Debug */,
+				29DE13286BBB6A45B3652FAE4BF910F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
+				92A3E9AC052A7345115439021B218E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FFA6AD9844BD75110BB8B3935C87B85 /* Build configuration list for PBXNativeTarget "Pods-MapSocial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3844615A4356D01985C2E321F7313EB /* Debug */,
+				D7277A50D6C77BECBA7985AF66D4AABE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6AC17DD88233CB3D08EB5BE6D1FD79A6 /* Build configuration list for PBXNativeTarget "Pods-MapSocialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				280330902C49DE19CA31635E1F1A8879 /* Debug */,
+				7315769E3AD12F934C2931DBA7EAE0F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A224B348AA965B2D2A94656B4288AAB /* Build configuration list for PBXNativeTarget "Pods-MapSocial-MapSocialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E120A3E2DC508BDD7702406693A15AE /* Debug */,
+				CF1F67821C0AD6F0A45558BEC3889825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

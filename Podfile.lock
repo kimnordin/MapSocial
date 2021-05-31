@@ -1,0 +1,16 @@
+PODS:
+  - Smile (2.0.0)
+
+DEPENDENCIES:
+  - Smile
+
+SPEC REPOS:
+  trunk:
+    - Smile
+
+SPEC CHECKSUMS:
+  Smile: 21ff6c48e06ecfcee605cca32aedd74d5810e34a
+
+PODFILE CHECKSUM: a21b503b08cefd634b052f214c6de36e397c4708
+
+COCOAPODS: 1.10.1
