@@ -94,7 +94,6 @@ extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
     func setupLocationManager() {
         locationManager.delegate = self
         configureLocationServices()
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.distanceFilter = 10
         locationManager.allowsBackgroundLocationUpdates = true
         locationManager.startUpdatingLocation()
@@ -172,7 +171,7 @@ extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
             // Configure your annotation view here
             annotationView.canShowCallout = true
             
-            if let annotationImage = annotation.title??.textToImage() {
+            if let annotationImage = annotation.title??.textToImage(fontSize: 24) {
                 print("text image")
                 annotationView.image = annotationImage
             }

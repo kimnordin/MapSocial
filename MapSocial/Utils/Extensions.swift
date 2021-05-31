@@ -7,23 +7,11 @@
 
 import Foundation
 import UIKit
-import Smile
 
 extension String {
-    var containsValidCharacter: Bool {
-        guard self != "" else { return true }
-        let allEmojis = Smile.list()
-        let joinedEmojis = allEmojis.joined(separator: "")
-        let hexSet = CharacterSet(charactersIn: joinedEmojis)
-        print(allEmojis.count)
-        print(joinedEmojis)
-        let newSet = CharacterSet(charactersIn: self)
-        return hexSet.isSuperset(of: newSet)
-    }
-    
-    func textToImage() -> UIImage? {
+    func textToImage(fontSize: CGFloat) -> UIImage? {
         let nsString = (self as NSString)
-        let font = UIFont.systemFont(ofSize: 24) // you can change your font size here
+        let font = UIFont.systemFont(ofSize: fontSize) // you can change your font size here
         let stringAttributes = [NSAttributedString.Key.font: font]
         let imageSize = nsString.size(withAttributes: stringAttributes)
 
@@ -61,6 +49,7 @@ extension UIView {
     
     func tapOutsideKeyboardDismiss() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
         self.addGestureRecognizer(tap)
     }
 }

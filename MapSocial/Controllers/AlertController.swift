@@ -30,7 +30,7 @@ class AlertController: UIViewController {
     
     func isValid() -> Bool {
         var valid = false
-        if alertView.statusField.text != "" && alertView.descriptionField.text != "" {
+        if alertView.selectedEmoji != "" && alertView.descriptionField.text != "" {
             valid = true
         }
         alertView.validInput = valid
@@ -41,8 +41,8 @@ class AlertController: UIViewController {
         let inputValid = isValid()
         
         if inputValid {
-            if let status = alertView.statusField.text,
-               let description = alertView.descriptionField.text {
+            let status = alertView.selectedEmoji
+            if let description = alertView.descriptionField.text {
                 delegate?.addAnnotation(status: status, description: description)
                 self.dismiss(animated: true, completion: nil)
             }
@@ -53,8 +53,8 @@ class AlertController: UIViewController {
         print("cancel action")
         if let presenter = presentingViewController as? MapController {
             print("present")
-            if let status = alertView.statusField.text,
-               let description = alertView.descriptionField.text {
+            let status = alertView.selectedEmoji
+            if let description = alertView.descriptionField.text {
                 print("add annotation")
                 presenter.addAnnotation(status: status, description: description)
             }

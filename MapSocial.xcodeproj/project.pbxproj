@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,10 +21,11 @@
 		F208631C2660262E00E142A7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208631B2660262E00E142A7 /* MapView.swift */; };
 		F20863242660263700E142A7 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20863232660263700E142A7 /* MapView.xib */; };
 		F20863292660279B00E142A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20863282660279B00E142A7 /* Extensions.swift */; };
+		F237384126658FE2007DE412 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237384026658FE2007DE412 /* EmojiCell.swift */; };
+		F237384626658FED007DE412 /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F237384526658FED007DE412 /* EmojiCell.xib */; };
 		F2B1D56F26643B0D00FA191F /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1D56E26643B0D00FA191F /* AlertController.swift */; };
 		F2B1D57526643BC600FA191F /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1D57426643BC600FA191F /* AlertView.xib */; };
 		F2B1D57D26643BD900FA191F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1D57C26643BD900FA191F /* AlertView.swift */; };
-		F2B8ECF826658280002F68A0 /* EmojiField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B8ECF726658280002F68A0 /* EmojiField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +71,11 @@
 		F208631B2660262E00E142A7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		F20863232660263700E142A7 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		F20863282660279B00E142A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F237384026658FE2007DE412 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
+		F237384526658FED007DE412 /* EmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
 		F2B1D56E26643B0D00FA191F /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		F2B1D57426643BC600FA191F /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		F2B1D57C26643BD900FA191F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
-		F2B8ECF726658280002F68A0 /* EmojiField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiField.swift; sourceTree = "<group>"; };
 		F49374BD107123F3A43BC7EB /* Pods-MapSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapSocial.debug.xcconfig"; path = "Target Support Files/Pods-MapSocial/Pods-MapSocial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,7 +127,6 @@
 				D9901F90146291BF59ADA8E0 /* Pods-MapSocialTests.debug.xcconfig */,
 				EFB6CFBD1D62667C9DFA7748 /* Pods-MapSocialTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -154,12 +155,11 @@
 		F20862E12660253300E142A7 /* MapSocial */ = {
 			isa = PBXGroup;
 			children = (
-				F20862E22660253300E142A7 /* AppDelegate.swift */,
-				F20862E42660253300E142A7 /* SceneDelegate.swift */,
-				F2086315266025B800E142A7 /* MapController.swift */,
-				F2B1D56E26643B0D00FA191F /* AlertController.swift */,
+				F237384A26659299007DE412 /* Controllers */,
 				F2B1D57326643BAF00FA191F /* Views */,
 				F2B8ECF626658257002F68A0 /* Utils */,
+				F20862E22660253300E142A7 /* AppDelegate.swift */,
+				F20862E42660253300E142A7 /* SceneDelegate.swift */,
 				F20862E82660253300E142A7 /* Main.storyboard */,
 				F20862ED2660253400E142A7 /* LaunchScreen.storyboard */,
 				F20862EB2660253400E142A7 /* Assets.xcassets */,
@@ -195,11 +195,22 @@
 			path = MapView;
 			sourceTree = "<group>";
 		};
+		F237384A26659299007DE412 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F2086315266025B800E142A7 /* MapController.swift */,
+				F2B1D56E26643B0D00FA191F /* AlertController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		F29F3F152665570E00872BBE /* AlertView */ = {
 			isa = PBXGroup;
 			children = (
 				F2B1D57C26643BD900FA191F /* AlertView.swift */,
 				F2B1D57426643BC600FA191F /* AlertView.xib */,
+				F237384026658FE2007DE412 /* EmojiCell.swift */,
+				F237384526658FED007DE412 /* EmojiCell.xib */,
 			);
 			path = AlertView;
 			sourceTree = "<group>";
@@ -217,7 +228,6 @@
 			isa = PBXGroup;
 			children = (
 				F20863282660279B00E142A7 /* Extensions.swift */,
-				F2B8ECF726658280002F68A0 /* EmojiField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -332,6 +342,7 @@
 			files = (
 				F20862EF2660253400E142A7 /* LaunchScreen.storyboard in Resources */,
 				F20863242660263700E142A7 /* MapView.xib in Resources */,
+				F237384626658FED007DE412 /* EmojiCell.xib in Resources */,
 				F2B1D57526643BC600FA191F /* AlertView.xib in Resources */,
 				F20862EC2660253400E142A7 /* Assets.xcassets in Resources */,
 				F20862EA2660253300E142A7 /* Main.storyboard in Resources */,
@@ -462,10 +473,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F237384126658FE2007DE412 /* EmojiCell.swift in Sources */,
 				F2086316266025B800E142A7 /* MapController.swift in Sources */,
 				F20863292660279B00E142A7 /* Extensions.swift in Sources */,
 				F2B1D57D26643BD900FA191F /* AlertView.swift in Sources */,
-				F2B8ECF826658280002F68A0 /* EmojiField.swift in Sources */,
 				F208631C2660262E00E142A7 /* MapView.swift in Sources */,
 				F20862E32660253300E142A7 /* AppDelegate.swift in Sources */,
 				F2B1D56F26643B0D00FA191F /* AlertController.swift in Sources */,
