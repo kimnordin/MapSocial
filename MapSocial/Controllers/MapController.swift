@@ -35,12 +35,9 @@ class MapController: UIViewController, AlertDelegate, UIGestureRecognizerDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupMapView()
         setupLocationManager()
         addMapDragRecognizer()
-        
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,7 +87,6 @@ class MapController: UIViewController, AlertDelegate, UIGestureRecognizerDelegat
 }
 
 extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
-    
     func setupLocationManager() {
         locationManager.delegate = self
         configureLocationServices()
@@ -100,6 +96,7 @@ extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
     }
     
     func setupMapView() {
+        mapView.register(SnapshotAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         mapView.delegate = self
         mapView.showsBuildings = true
         mapView.setUserTrackingMode(.follow, animated: true)
@@ -153,38 +150,85 @@ extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
         guard !annotation.isKind(of: MKUserLocation.self) else {
             return nil
         }
-        
-        let annotationIdentifier = "AnnotationIdentifier"
-        
-        var annotationView: MKAnnotationView?
-        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: annotationIdentifier) {
+
+        let annotationIdentifier = MKMapViewDefaultAnnotationViewReuseIdentifier
+
+        var annotationView: SnapshotAnnotationView?
+        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier) as? SnapshotAnnotationView {
             annotationView = dequeuedAnnotationView
             annotationView?.annotation = annotation
         }
         else {
             let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
             av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-            annotationView = av
+            annotationView = av as? SnapshotAnnotationView
         }
-        
+
         if let annotationView = annotationView {
             // Configure your annotation view here
             annotationView.canShowCallout = true
-            
+
             if let annotationImage = annotation.title??.textToImage(fontSize: 24) {
-                print("text image")
                 annotationView.image = annotationImage
             }
             else {
                 annotationView.image = UIImage(systemName: "mappin.and.ellipse")
             }
         }
-        
+
         return annotationView
-    }
-    
-    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
-        print("The annotation was selected: ", view.annotation?.title)
     }
 }
 
+class SnapshotAnnotationView: MKAnnotationView {
+    override var annotation: MKAnnotation? { didSet { configureDetailView() } }
+
+    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
+        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
+        configure()
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configure()
+    }
+}
+
+private extension SnapshotAnnotationView {
+    func configure() {
+        canShowCallout = true
+        configureDetailView()
+    }
+
+    func configureDetailView() {
+        guard let annotation = annotation else { return }
+
+        let rect = CGRect(origin: .zero, size: CGSize(width: 300, height: 200))
+
+        let snapshotView = UIView()
+        snapshotView.translatesAutoresizingMaskIntoConstraints = false
+
+        let options = MKMapSnapshotter.Options()
+        options.size = rect.size
+        options.mapType = .satelliteFlyover
+        options.camera = MKMapCamera(lookingAtCenter: annotation.coordinate, fromDistance: 250, pitch: 65, heading: 0)
+
+        let snapshotter = MKMapSnapshotter(options: options)
+        snapshotter.start { snapshot, error in
+            guard let snapshot = snapshot, error == nil else {
+                print(error ?? "Unknown error")
+                return
+            }
+
+            let imageView = UIImageView(frame: rect)
+            imageView.image = snapshot.image
+            snapshotView.addSubview(imageView)
+        }
+
+        detailCalloutAccessoryView = snapshotView
+        NSLayoutConstraint.activate([
+            snapshotView.widthAnchor.constraint(equalToConstant: rect.width),
+            snapshotView.heightAnchor.constraint(equalToConstant: rect.height)
+        ])
+    }
+}
