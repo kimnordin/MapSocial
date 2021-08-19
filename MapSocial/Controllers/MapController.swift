@@ -38,6 +38,11 @@ class MapController: UIViewController, AlertDelegate, UIGestureRecognizerDelegat
         setupMapView()
         setupLocationManager()
         addMapDragRecognizer()
+        
+        locationButton.layer.cornerRadius = 8
+        locationButton.layer.masksToBounds = true
+        annotationButton.layer.cornerRadius = annotationButton.frame.width/2
+        annotationButton.layer.masksToBounds = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -83,6 +88,10 @@ class MapController: UIViewController, AlertDelegate, UIGestureRecognizerDelegat
     
     @IBAction func centerUserLocation(_ sender: UIButton) {
         followUser.toggle()
+        
+        if followUser {
+            centerViewOnUserLocation()
+        }
     }
 }
 
@@ -96,24 +105,29 @@ extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
     }
     
     func setupMapView() {
-        mapView.register(SnapshotAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        mapView.register(CustomAnnotationView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         mapView.delegate = self
         mapView.showsBuildings = true
         mapView.setUserTrackingMode(.follow, animated: true)
         mapView.showsUserLocation = true
         mapView.showsCompass = false
+        mapView.mapType = .satelliteFlyover
         centerViewOnUserLocation()
     }
     
     func addAnnotation(status: String, description: String) {
-        print("currentCoord: ", currentCoordinate)
         let annotation = MKPointAnnotation()
         annotation.title = status
         annotation.subtitle = description
+        
         if let position = currentCoordinate {
             annotation.coordinate = position
             mapView.addAnnotation(annotation)
         }
+    }
+    
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        print("region changed: ", mapView.region)
     }
     
     func centerViewOnUserLocation() {
@@ -153,19 +167,19 @@ extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
 
         let annotationIdentifier = MKMapViewDefaultAnnotationViewReuseIdentifier
 
-        var annotationView: SnapshotAnnotationView?
-        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier) as? SnapshotAnnotationView {
+        var annotationView: CustomAnnotationView?
+        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier) as? CustomAnnotationView {
             annotationView = dequeuedAnnotationView
             annotationView?.annotation = annotation
         }
         else {
             let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
             av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-            annotationView = av as? SnapshotAnnotationView
+            annotationView = av as? CustomAnnotationView
         }
 
         if let annotationView = annotationView {
-            // Configure your annotation view here
+            
             annotationView.canShowCallout = true
 
             if let annotationImage = annotation.title??.textToImage(fontSize: 24) {
@@ -175,60 +189,6 @@ extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
                 annotationView.image = UIImage(systemName: "mappin.and.ellipse")
             }
         }
-
         return annotationView
-    }
-}
-
-class SnapshotAnnotationView: MKAnnotationView {
-    override var annotation: MKAnnotation? { didSet { configureDetailView() } }
-
-    override init(annotation: MKAnnotation?, reuseIdentifier: String?) {
-        super.init(annotation: annotation, reuseIdentifier: reuseIdentifier)
-        configure()
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-        configure()
-    }
-}
-
-private extension SnapshotAnnotationView {
-    func configure() {
-        canShowCallout = true
-        configureDetailView()
-    }
-
-    func configureDetailView() {
-        guard let annotation = annotation else { return }
-
-        let rect = CGRect(origin: .zero, size: CGSize(width: 300, height: 200))
-
-        let snapshotView = UIView()
-        snapshotView.translatesAutoresizingMaskIntoConstraints = false
-
-        let options = MKMapSnapshotter.Options()
-        options.size = rect.size
-        options.mapType = .satelliteFlyover
-        options.camera = MKMapCamera(lookingAtCenter: annotation.coordinate, fromDistance: 250, pitch: 65, heading: 0)
-
-        let snapshotter = MKMapSnapshotter(options: options)
-        snapshotter.start { snapshot, error in
-            guard let snapshot = snapshot, error == nil else {
-                print(error ?? "Unknown error")
-                return
-            }
-
-            let imageView = UIImageView(frame: rect)
-            imageView.image = snapshot.image
-            snapshotView.addSubview(imageView)
-        }
-
-        detailCalloutAccessoryView = snapshotView
-        NSLayoutConstraint.activate([
-            snapshotView.widthAnchor.constraint(equalToConstant: rect.width),
-            snapshotView.heightAnchor.constraint(equalToConstant: rect.height)
-        ])
     }
 }

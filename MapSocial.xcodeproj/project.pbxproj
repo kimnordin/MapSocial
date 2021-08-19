@@ -18,11 +18,10 @@
 		F20862FA2660253400E142A7 /* MapSocialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20862F92660253400E142A7 /* MapSocialTests.swift */; };
 		F20863052660253400E142A7 /* MapSocialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20863042660253400E142A7 /* MapSocialUITests.swift */; };
 		F2086316266025B800E142A7 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2086315266025B800E142A7 /* MapController.swift */; };
-		F208631C2660262E00E142A7 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F208631B2660262E00E142A7 /* MapView.swift */; };
-		F20863242660263700E142A7 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F20863232660263700E142A7 /* MapView.xib */; };
 		F20863292660279B00E142A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20863282660279B00E142A7 /* Extensions.swift */; };
 		F237384126658FE2007DE412 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F237384026658FE2007DE412 /* EmojiCell.swift */; };
 		F237384626658FED007DE412 /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F237384526658FED007DE412 /* EmojiCell.xib */; };
+		F257800D266645A100CF459E /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F257800C266645A100CF459E /* CustomAnnotationView.swift */; };
 		F2B1D56F26643B0D00FA191F /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1D56E26643B0D00FA191F /* AlertController.swift */; };
 		F2B1D57526643BC600FA191F /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2B1D57426643BC600FA191F /* AlertView.xib */; };
 		F2B1D57D26643BD900FA191F /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B1D57C26643BD900FA191F /* AlertView.swift */; };
@@ -68,11 +67,10 @@
 		F20863042660253400E142A7 /* MapSocialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSocialUITests.swift; sourceTree = "<group>"; };
 		F20863062660253400E142A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F2086315266025B800E142A7 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
-		F208631B2660262E00E142A7 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		F20863232660263700E142A7 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		F20863282660279B00E142A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F237384026658FE2007DE412 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 		F237384526658FED007DE412 /* EmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
+		F257800C266645A100CF459E /* CustomAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		F2B1D56E26643B0D00FA191F /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
 		F2B1D57426643BC600FA191F /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		F2B1D57C26643BD900FA191F /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -186,15 +184,6 @@
 			path = MapSocialUITests;
 			sourceTree = "<group>";
 		};
-		F208631A2660261900E142A7 /* MapView */ = {
-			isa = PBXGroup;
-			children = (
-				F208631B2660262E00E142A7 /* MapView.swift */,
-				F20863232660263700E142A7 /* MapView.xib */,
-			);
-			path = MapView;
-			sourceTree = "<group>";
-		};
 		F237384A26659299007DE412 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +191,14 @@
 				F2B1D56E26643B0D00FA191F /* AlertController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F257800B2666459000CF459E /* AnnotationView */ = {
+			isa = PBXGroup;
+			children = (
+				F257800C266645A100CF459E /* CustomAnnotationView.swift */,
+			);
+			path = AnnotationView;
 			sourceTree = "<group>";
 		};
 		F29F3F152665570E00872BBE /* AlertView */ = {
@@ -218,8 +215,8 @@
 		F2B1D57326643BAF00FA191F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F257800B2666459000CF459E /* AnnotationView */,
 				F29F3F152665570E00872BBE /* AlertView */,
-				F208631A2660261900E142A7 /* MapView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,7 +338,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F20862EF2660253400E142A7 /* LaunchScreen.storyboard in Resources */,
-				F20863242660263700E142A7 /* MapView.xib in Resources */,
 				F237384626658FED007DE412 /* EmojiCell.xib in Resources */,
 				F2B1D57526643BC600FA191F /* AlertView.xib in Resources */,
 				F20862EC2660253400E142A7 /* Assets.xcassets in Resources */,
@@ -477,9 +473,9 @@
 				F2086316266025B800E142A7 /* MapController.swift in Sources */,
 				F20863292660279B00E142A7 /* Extensions.swift in Sources */,
 				F2B1D57D26643BD900FA191F /* AlertView.swift in Sources */,
-				F208631C2660262E00E142A7 /* MapView.swift in Sources */,
 				F20862E32660253300E142A7 /* AppDelegate.swift in Sources */,
 				F2B1D56F26643B0D00FA191F /* AlertController.swift in Sources */,
+				F257800D266645A100CF459E /* CustomAnnotationView.swift in Sources */,
 				F20862E52660253300E142A7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -660,6 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LZB8X3995T;
 				INFOPLIST_FILE = MapSocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,6 +677,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LZB8X3995T;
 				INFOPLIST_FILE = MapSocial/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

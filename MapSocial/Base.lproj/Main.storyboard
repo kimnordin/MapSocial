@@ -21,11 +21,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnb-43-ZVV">
-                                <rect key="frame" x="187" y="802" width="40" height="40"/>
+                                <rect key="frame" x="182" y="792" width="50" height="50"/>
+                                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="40" id="DgZ-rq-q1W"/>
-                                    <constraint firstAttribute="height" constant="40" id="Tzh-tJ-zoH"/>
+                                    <constraint firstAttribute="width" constant="50" id="DgZ-rq-q1W"/>
+                                    <constraint firstAttribute="height" constant="50" id="Tzh-tJ-zoH"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" image="plus.circle.fill" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="40"/>
                                 </state>
@@ -35,6 +37,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1p-HP-UuS">
                                 <rect key="frame" x="359" y="108" width="35" height="35"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="35" id="HLn-1h-ST9"/>
                                     <constraint firstAttribute="height" constant="35" id="YCC-Qs-SAO"/>
@@ -128,6 +131,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

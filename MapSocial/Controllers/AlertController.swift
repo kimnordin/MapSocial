@@ -14,6 +14,7 @@ protocol AlertDelegate: class {
 class AlertController: UIViewController {
     
     weak var delegate: AlertDelegate?
+    var shouldShowSateliteImage: Bool = false
 
     @IBOutlet weak var alertView: AlertView!
     override func viewDidLoad() {
@@ -26,11 +27,12 @@ class AlertController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         alertView.doneButton.addTarget(self, action: #selector(doneAction), for: .touchUpInside)
         alertView.cancelButton.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
+        alertView.sateliteToggle.addTarget(self, action: #selector(toggleSatelite), for: .valueChanged)
     }
     
     func isValid() -> Bool {
         var valid = false
-        if alertView.selectedEmoji != "" && alertView.descriptionField.text != "" {
+        if alertView.selectedEmoji != "" {
             valid = true
         }
         alertView.validInput = valid
@@ -43,6 +45,9 @@ class AlertController: UIViewController {
         if inputValid {
             let status = alertView.selectedEmoji
             if let description = alertView.descriptionField.text {
+                if shouldShowSateliteImage {
+                    
+                }
                 delegate?.addAnnotation(status: status, description: description)
                 self.dismiss(animated: true, completion: nil)
             }
@@ -60,5 +65,9 @@ class AlertController: UIViewController {
             }
         }
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func toggleSatelite(_ sender: UISwitch) {
+        shouldShowSateliteImage.toggle()
     }
 }

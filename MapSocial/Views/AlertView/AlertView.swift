@@ -15,6 +15,7 @@ class AlertView: UIView, UITextFieldDelegate {
     @IBOutlet weak var errorField: UILabel!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var doneButton: UIButton!
+    @IBOutlet weak var sateliteToggle: UISwitch!
     
     private let viewSelfId = "AlertView"
     private var contentView: UIView?
@@ -36,6 +37,7 @@ class AlertView: UIView, UITextFieldDelegate {
         super.init(coder: aDecoder)
         commonInit()
     }
+    
 
     func commonInit() {
         contentView = loadViewFromNib(id: viewSelfId)
