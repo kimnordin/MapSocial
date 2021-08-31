@@ -7,8 +7,8 @@
 
 import UIKit
 
+@IBDesignable
 class AlertView: UIView, UITextFieldDelegate {
-    
     @IBOutlet weak var emojiCollection: UICollectionView!
     @IBOutlet weak var statusLabel: UILabel!
     @IBOutlet weak var descriptionField: UITextField!

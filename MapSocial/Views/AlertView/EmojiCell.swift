@@ -7,6 +7,7 @@
 
 import UIKit
 
+@IBDesignable
 class EmojiCell: UICollectionViewCell {
     @IBOutlet weak var label: UILabel!
     

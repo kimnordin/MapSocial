@@ -164,31 +164,18 @@ extension MapController: MKMapViewDelegate, CLLocationManagerDelegate {
         guard !annotation.isKind(of: MKUserLocation.self) else {
             return nil
         }
-
-        let annotationIdentifier = MKMapViewDefaultAnnotationViewReuseIdentifier
-
-        var annotationView: CustomAnnotationView?
-        if let dequeuedAnnotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier) as? CustomAnnotationView {
-            annotationView = dequeuedAnnotationView
-            annotationView?.annotation = annotation
+        
+        guard let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier) as? CustomAnnotationView else { return nil }
+        
+        annotationView.canShowCallout = true
+        
+        if let annotationImage = annotation.title??.textToImage(fontSize: 24) {
+            annotationView.image = annotationImage
         }
         else {
-            let av = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationIdentifier)
-            av.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-            annotationView = av as? CustomAnnotationView
+            annotationView.image = UIImage(systemName: "mappin.and.ellipse")
         }
-
-        if let annotationView = annotationView {
-            
-            annotationView.canShowCallout = true
-
-            if let annotationImage = annotation.title??.textToImage(fontSize: 24) {
-                annotationView.image = annotationImage
-            }
-            else {
-                annotationView.image = UIImage(systemName: "mappin.and.ellipse")
-            }
-        }
+        
         return annotationView
     }
 }
